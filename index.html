@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Example 1</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 400px;
+            background-color: #ff0000;
+        }
+    </style>
+
+    <script>
+        function changeColor() {
+            let boxElement = document.getElementById('box');
+            let bgColor = boxElement.style.backgroundColor;
+            let newBgColor = bgColor === 'blue' ? 'red' : 'blue';
+
+            boxElement.style.backgroundColor = newBgColor;
+            // if (bgColor === "blue")
+            // {
+            //     boxElement.style.backgroundColor = "red"
+            // }
+
+            // else
+            // {
+            //     boxElement.style.backgroundColor = "blue"
+            // }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="changeColor()">Change Color</button>
+</body>
+</html>
